@@ -1,0 +1,38 @@
+.aircraft-card {
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+    cursor: pointer;
+    width: 85%;
+    height: 85%;
+  }
+
+  .aircraft-card.selected {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+  }
+  
+  .aircraft-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .aircraft-card img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 1px;
+    height: 80%;
+    width: 90%;
+  }
+  
+  .aircraft-name {
+    font-family: 'Mansalva';
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 12px;
+  }

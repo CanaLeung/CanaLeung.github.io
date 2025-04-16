@@ -1,0 +1,23 @@
+.GuessWhoHomeTitle{
+    font-family: 'Gloock';
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.Subheading{
+    font-family: 'Gloock';
+    font-size: 1rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.Button{
+    font-family: 'Gloock';
+    font-weight: 100;
+    font-size: 1rem;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 1px 20px 1px 20px;
+    margin: 20px;
+}

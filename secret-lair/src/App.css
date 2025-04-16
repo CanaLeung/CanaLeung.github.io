@@ -1,0 +1,89 @@
+.MainPage{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.Title{
+  font-family: 'Montserrat', serif;
+  font-weight:800;
+  font-size: 4rem;
+  color: #000080;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
+  background-color: #f9f8ed;
+  color: #000080;
+}
+
+.page {
+  background: #f9f8ed;
+  min-width: 500px;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: #accce3;
+  border: none;
+  color: #000080;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #5484b5;
+}
+
+.TextInput{
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 15px;
+  border: 2.5px solid  #5484b5;
+  background-color: white;
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  font-size: 16px;
+  color:  #5484b5;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.NavButtons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* or use a subtle color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 128, 0.4); /* navy-ish with opacity */
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Optional: Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 128, 0.7);
+}

@@ -1,0 +1,33 @@
+.Greeting{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .GreetingContents{
+    width: 35%;
+    line-height: 1.6;
+  }
+
+  .italics{
+    font-style: italic;
+  }
+
+  .GreetingFadeOut{
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+
+  .GreetingFadeOut.fade-out{
+    opacity: 0;
+  }

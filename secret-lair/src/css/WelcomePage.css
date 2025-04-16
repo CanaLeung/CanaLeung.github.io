@@ -1,0 +1,103 @@
+  .WelcomePage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-image: url('/public/assets/welcome_clouds.png');
+    background-size: cover;
+    background-position: center 100vh;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards, slideUp 1.5s ease forwards;
+    font-family: 'Montserrat';
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp{
+    to {
+      background-position: center;
+    }
+  }
+  
+  .WelcomePageContents{
+    transform: translateY(-10px);
+    opacity: 0;
+    animation: contentFadeIn 1s ease 1s forwards;
+  }
+
+  .WelcomePageSlideUp{
+    height: 100%;
+    width: 100%;
+    background-color: #accce3;
+    transition: transform 1s ease 1s;
+  }
+
+  .WelcomePageSlideUp.slide-up{
+    transform: translateY(-100vh);
+  }
+  
+  @keyframes contentFadeIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30vw;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  .slider::-webkit-slider-runnable-track {
+    touch-action: none;
+    border: 2px solid #accce3;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    appearance: none;
+    background: url('../assets/airplane.png');
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    margin-top: -22px;
+    margin-left: -10px;
+  }
+
+  .SliderContainer{
+    transition: opacity 0.5s ease;
+  }
+
+  .SliderContainer.fade-out{
+    opacity: 0;
+  }
+
+  .Title {
+    transition: transform 1s ease, top 1s ease;
+    position: relative;
+    top:0;
+  }
+
+  .Title.centered {
+    top: 3vh;
+    transform: translateY(-50%);
+  }

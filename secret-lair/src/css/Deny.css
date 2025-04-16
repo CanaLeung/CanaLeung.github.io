@@ -1,0 +1,46 @@
+.Deny{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .DenyFadeOut{
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+
+  .DenyFadeOut.fade-out{
+    opacity: 0;
+  }
+  
+  .DenyContents{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+  }
+  
+  .DenyText{
+    width: 70%;
+    display: flexbox;
+    text-align: right;
+  }
+
+  .DenyImage{
+    width:30%;
+    height: 300px;
+  }
+
+  .DenyImage img{
+    height:80%;
+    object-fit: cover;
+  }
