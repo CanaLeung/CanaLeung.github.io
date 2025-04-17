@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/SecretLair/static/css/main.5f917df8.css",
-    "main.js": "/SecretLair/static/js/main.31a0887a.js",
+    "main.css": "/SecretLair/static/css/main.887c282c.css",
+    "main.js": "/SecretLair/static/js/main.3aee63da.js",
     "static/js/453.dc6b0c9d.chunk.js": "/SecretLair/static/js/453.dc6b0c9d.chunk.js",
     "static/media/airplane.png": "/SecretLair/static/media/airplane.fd6329be20575a193076.png",
     "static/media/welcome_clouds.png": "/SecretLair/static/media/welcome_clouds.47566a686d8c519aa5fd.png",
     "static/media/apology.png": "/SecretLair/static/media/apology.f6ea6d8cef566844c26a.png",
     "index.html": "/SecretLair/index.html",
-    "main.5f917df8.css.map": "/SecretLair/static/css/main.5f917df8.css.map",
-    "main.31a0887a.js.map": "/SecretLair/static/js/main.31a0887a.js.map",
+    "main.887c282c.css.map": "/SecretLair/static/css/main.887c282c.css.map",
+    "main.3aee63da.js.map": "/SecretLair/static/js/main.3aee63da.js.map",
     "453.dc6b0c9d.chunk.js.map": "/SecretLair/static/js/453.dc6b0c9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f917df8.css",
-    "static/js/main.31a0887a.js"
+    "static/css/main.887c282c.css",
+    "static/js/main.3aee63da.js"
   ]
 }
