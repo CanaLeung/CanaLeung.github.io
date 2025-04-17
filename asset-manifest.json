@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/rio/static/css/main.679a36a6.css",
-    "main.js": "/rio/static/js/main.9f4948fa.js",
-    "static/js/453.dc6b0c9d.chunk.js": "/rio/static/js/453.dc6b0c9d.chunk.js",
-    "static/media/airplane.png": "/rio/static/media/airplane.fd6329be20575a193076.png",
-    "static/media/welcome_clouds.png": "/rio/static/media/welcome_clouds.47566a686d8c519aa5fd.png",
-    "static/media/apology.png": "/rio/static/media/apology.f6ea6d8cef566844c26a.png",
-    "index.html": "/rio/index.html",
-    "main.679a36a6.css.map": "/rio/static/css/main.679a36a6.css.map",
-    "main.9f4948fa.js.map": "/rio/static/js/main.9f4948fa.js.map",
-    "453.dc6b0c9d.chunk.js.map": "/rio/static/js/453.dc6b0c9d.chunk.js.map"
+    "main.css": "/static/css/main.8dadc7bf.css",
+    "main.js": "/static/js/main.60a58c9c.js",
+    "static/js/453.dc6b0c9d.chunk.js": "/static/js/453.dc6b0c9d.chunk.js",
+    "static/media/airplane.png": "/static/media/airplane.fd6329be20575a193076.png",
+    "static/media/welcome_clouds.png": "/static/media/welcome_clouds.47566a686d8c519aa5fd.png",
+    "static/media/apology.png": "/static/media/apology.f6ea6d8cef566844c26a.png",
+    "index.html": "/index.html",
+    "main.8dadc7bf.css.map": "/static/css/main.8dadc7bf.css.map",
+    "main.60a58c9c.js.map": "/static/js/main.60a58c9c.js.map",
+    "453.dc6b0c9d.chunk.js.map": "/static/js/453.dc6b0c9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.679a36a6.css",
-    "static/js/main.9f4948fa.js"
+    "static/css/main.8dadc7bf.css",
+    "static/js/main.60a58c9c.js"
   ]
 }
