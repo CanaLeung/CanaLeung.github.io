@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL=/SecretLair/" />
-    <script>
-      const newUrl = '/SecretLair' + window.location.pathname + window.location.search;
-      window.location.replace(newUrl);
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      (function() {
+        const currentPath = window.location.pathname;
+        const hasSecretLair = currentPath.startsWith('/SecretLair');
+
+        if (!hasSecretLair) {
+          const newUrl = '/SecretLair' + currentPath + window.location.search + window.location.hash;
+          window.location.replace(newUrl);
+        }
+      })();
     </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/SecretLair/" />
+    </noscript>
   </head>
-  <body></body>
+  <body>
+    <p>Redirecting to the app...</p>
+  </body>
 </html>
