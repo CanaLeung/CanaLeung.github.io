@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/SecretLair/" />
+    <meta http-equiv="refresh" content="0; url=/SecretLair/#/" />
     <script type="text/javascript">
       const fullPath = window.location.pathname + window.location.search + window.location.hash;
-      const newUrl = "/SecretLair/#" + fullPath.replace(/^\/SecretLair\/?/, '');
+
+      const relativePath = fullPath.replace(/^\/SecretLair\/?/, '');
+
+      const newUrl = "/SecretLair/#/" + relativePath;
       window.location.replace(newUrl);
     </script>
     <title>Redirecting...</title>

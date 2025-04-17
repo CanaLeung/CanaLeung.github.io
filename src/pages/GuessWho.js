@@ -14,11 +14,15 @@ const GuessWho = ({onNewGame, onHome}) => {
     const [triggered, setTriggered] = useState(false);
 
     const copyLinkToClipboard = () => {
-      navigator.clipboard.writeText(window.location.href).then(() => {
+      const { origin } = window.location;
+      const fullLink = `${origin}/SecretLair/#/GuessWho/game?deck=${encodedDeck}`;
+    
+      navigator.clipboard.writeText(fullLink).then(() => {
         setCopied(true);
-        setTimeout(() => setCopied(false), 2000); // Reset message after 2 sec
+        setTimeout(() => setCopied(false), 2000);
       });
     };
+    
 
     const toggleAircraftSelection = (aircraftId) => {
         setSelectedAircraftIds(prevSelected =>
