@@ -15,7 +15,7 @@ const GuessWho = ({onNewGame, onHome}) => {
 
     const copyLinkToClipboard = () => {
       const { origin } = window.location;
-      const fullLink = `${origin}/SecretLair/#/GuessWho/game?deck=${encodedDeck}`;
+      const fullLink = `${origin}/SecretLair/GuessWho/game?deck=${encodedDeck}`;
     
       navigator.clipboard.writeText(fullLink).then(() => {
         setCopied(true);
