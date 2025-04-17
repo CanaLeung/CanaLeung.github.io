@@ -22,3 +22,12 @@
   .EnterNameFadeOut.fade-out{
     opacity: 0;
   }
+
+  @media (max-width: 800px) {
+    .EnterNameContents{
+      width: 80%;
+    }
+    .NavButtons{
+      width: 100%;
+    }
+  }

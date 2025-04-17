@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;
     opacity: 0;
@@ -17,8 +18,22 @@
   .EnterHobbyFadeOut{
     transition: opacity 0.5s ease;
     opacity: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .EnterHobbyFadeOut.fade-out{
     opacity: 0;
+  }
+
+  @media (max-width: 800px) {
+    .EnterHobby{
+      width: 80%;
+    }
+    .EnterHobbyContents{
+      width: 100%;
+    }
+    .NavButtons{
+      width: 100%;
+    }
   }

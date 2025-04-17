@@ -34,8 +34,7 @@ function EnterHobby({ userHobby, setUserHobby, onBack, onSubmit }) {
              {" "} collecting!
             </p>
           </div>
-        </div>
-        <div className='NavButtons'>
+          <div className='NavButtons'>
         <button onClick={() => {
           setTriggered(true);
           setTimeout(() => {
@@ -52,6 +51,8 @@ function EnterHobby({ userHobby, setUserHobby, onBack, onSubmit }) {
         }}
           >→</button>
         </div>
+        </div>
+        
       </div>
     );
   }

@@ -44,3 +44,31 @@
     height:80%;
     object-fit: cover;
   }
+
+  @media (max-width: 800px) {
+    .DenyFadeOut{
+      display: flex;
+      justify-content: center;
+    }
+
+    .Deny{
+      width: 80%;
+    }
+    .DenyContents{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .DenyText{
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+    .DenyImage{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }

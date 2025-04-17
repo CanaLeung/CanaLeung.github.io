@@ -31,3 +31,12 @@
   .GreetingFadeOut.fade-out{
     opacity: 0;
   }
+
+  @media (max-width: 800px) {
+    .GreetingFadeOut{
+      width: 80%;
+    }
+    .GreetingContents{
+      width: 100%;
+    }
+  }
