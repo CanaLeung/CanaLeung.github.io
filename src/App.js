@@ -7,7 +7,7 @@ import './css/EnterName.css';
 import './css/EnterHobby.css';
 import './css/Deny.css';
 import './css/Greeting.css';
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import {Routes, Route, useNavigate, useLocation} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -29,13 +29,23 @@ function App() {
     setUserHobby('');
   };
 
+  const location = useLocation();
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const redirect = params.get("redirect");
-    if (redirect) {
-      navigate(redirect);
+    const redirectPath = params.get("redirect");
+
+    if (redirectPath) {
+      // Only redirect if not already at the correct path
+      if (location.pathname !== redirectPath) {
+        navigate(redirectPath, { replace: true });
+      } else {
+        // Clean up the URL by removing the redirect param
+        const cleanUrl = window.location.origin + "/SecretLair" + redirectPath;
+        window.history.replaceState({}, "", cleanUrl);
+      }
     }
-  }, [navigate]);
+  }, [location, navigate]);
 
   return (
     <Routes>
