@@ -29,6 +29,14 @@ function App() {
     setUserHobby('');
   };
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirect = params.get("redirect");
+    if (redirect) {
+      navigate(redirect);
+    }
+  }, [navigate]);
+
   return (
     <Routes>
       <Route path="/GuessWho/game" element={<GuessWho onNewGame={handleNewGame} onHome={handleHome} />}/>
