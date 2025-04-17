@@ -60,7 +60,7 @@ const aircraftList = aircraftFilenames.map((filename, index) => {
     return {
         id: index + 1,
         name,
-        img: `${process.env.PUBLIC_URL}/assets/aircrafts/${filename}`,
+        img: `${process.env.PUBLIC_URL}/public/assets/aircrafts/${filename}`,
 
     };
 });
