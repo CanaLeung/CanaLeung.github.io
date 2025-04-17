@@ -8,7 +8,7 @@ import './css/EnterHobby.css';
 import './css/Deny.css';
 import './css/Greeting.css';
 import {Routes, Route, useNavigate} from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   const navigate = useNavigate();
