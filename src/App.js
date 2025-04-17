@@ -40,7 +40,7 @@ function App() {
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
           />}/>
-      <Route path="/GuessWhoGame" element={<GuessWho onNewGame={handleNewGame} onHome={handleHome} />}/>
+      <Route path="/GuessWho/game" element={<GuessWho onNewGame={handleNewGame} onHome={handleHome} />}/>
     </Routes>
   );
 }
