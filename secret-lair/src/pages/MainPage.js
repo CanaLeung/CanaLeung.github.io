@@ -15,7 +15,7 @@ function MainPage(){
     const allowedUserHobbies = ['koen'];
     const [userName, setUserName] = useState('');
     const [userHobby, setUserHobby] = useState('');
-    const [currentPage, setCurrentPage] = useState('GuessWhoHome');
+    const [currentPage, setCurrentPage] = useState('WelcomePage');
     const navigate = useNavigate(); 
     return (
       <Routes>

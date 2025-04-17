@@ -5,6 +5,7 @@ import AircraftCard from '../components/AircraftCard';
 import '../css/GuessWhoDeckSelection.css';
 
 const GuessWhoDeckSelection = ({onBack}) => {
+  const [triggered, setTriggered] = useState(false);
   const [selectedAircraft, setSelectedAircraft] = useState([]);
   const navigate = useNavigate();
   const limit = 24;
@@ -24,6 +25,7 @@ const GuessWhoDeckSelection = ({onBack}) => {
   };
 
   return (
+    <div className={`DeckSelectionFadeOut ${triggered ? "fade-out": ""}`}>
     <div className="DeckSelectionScreen">
       <h2 className='DeckSelectionTitle'
         >Select 24 Aircrafts!</h2>
@@ -44,7 +46,12 @@ const GuessWhoDeckSelection = ({onBack}) => {
           className='Third'
         >
           <button className='DeckButton'
-            onClick={() => {onBack();}}
+            onClick={() => {
+              setTriggered(true);
+              setTimeout(() => {
+                onBack();
+              }, 1000);
+            }}
           >←</button>
         </div>
         <button className={`Third DeckButton PlayButton ${selectedAircraft.length!==limit ? "Disabled": ""}`} 
@@ -59,6 +66,7 @@ const GuessWhoDeckSelection = ({onBack}) => {
         </div>
       </div>
       
+    </div>
     </div>
   );
 };

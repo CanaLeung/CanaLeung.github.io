@@ -72,12 +72,12 @@ button:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; /* or use a subtle color */
+  background: transparent; 
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 128, 0.4); /* navy-ish with opacity */
+  background-color: rgba(0, 0, 128, 0.4);
   border-radius: 10px;
   border: 2px solid transparent;
   background-clip: content-box;

@@ -11,6 +11,7 @@ const GuessWho = ({onNewGame, onHome}) => {
     const [playerAircraft, setPlayerAircraft] = useState(null);
     const [selectedAircraftIds, setSelectedAircraftIds] = useState([]);
     const [copied, setCopied] = useState(false);
+    const [triggered, setTriggered] = useState(false);
 
     const copyLinkToClipboard = () => {
       navigator.clipboard.writeText(window.location.href).then(() => {
@@ -43,6 +44,7 @@ const GuessWho = ({onNewGame, onHome}) => {
       }, [encodedDeck]);
 
     return (
+      <div className={`GuessWhoFadeOut ${triggered ? "fade-out": ""}`}>
       <div className="game-container ">
         <div className='header'>
         <div className='TitleContainer'>
@@ -56,11 +58,17 @@ const GuessWho = ({onNewGame, onHome}) => {
         <div className='LeftSideContainer'>
           <button className='GuessWhoNavButton'
             onClick = {() => {
-              onNewGame();
+              setTriggered(true);
+              setTimeout(() => {
+                onNewGame();
+              }, 700);
             }}>New</button>
           <button className='GuessWhoNavButton'
             onClick={() => {
-              onHome();
+              setTriggered(true);
+              setTimeout(() => {
+                onHome();
+              }, 700);
             }}
           >Home</button>
         </div>
@@ -89,6 +97,7 @@ const GuessWho = ({onNewGame, onHome}) => {
         )}
         </div>
 
+      </div>
       </div>
     );
   };

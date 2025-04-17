@@ -1,9 +1,21 @@
+.DeckSelectionFadeOut{
+  height: 80%;
+  display: flex;
+  justify-content: center; 
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.DeckSelectionFadeOut.fade-out{
+  opacity: 0;
+}
+
 .DeckSelectionScreen{
     padding: 1rem;
     max-width: 1200px;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
-    height: 75%;
+    height: 100%;
     width: 65%;
     font-family: 'Gloock';
 }
