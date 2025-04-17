@@ -69,3 +69,33 @@
 .DeckButton {
   font-family: 'Gloock';
 }
+
+@media (max-width: 800px) {
+  .DeckSelectionFadeOut{
+    width: 80%;
+  }
+
+  .DeckSelectionScreen{
+    padding: 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .DeckSelectionTitle{
+    font-size: 2rem;
+    height: 8%;
+  }
+
+  .aircraft-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    height: 50%;
+  }
+
+  .Footer{
+    display: flex;
+    flex-direction: column;
+  }
+}

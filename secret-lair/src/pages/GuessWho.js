@@ -52,7 +52,8 @@ const GuessWho = ({onNewGame, onHome}) => {
           <div className='CopyButtonContainer'>
             <button className='CopyButton' onClick={copyLinkToClipboard}>
             📋          </button>
-            {copied && <p style={{ fontStyle: 'italic' }}>Link copied!</p>}
+            {copied && <p className='CopiedText' 
+              style={{ fontStyle: 'italic' }}>Link copied!</p>}
           </div>
         </div>
         <div className='LeftSideContainer'>
@@ -87,12 +88,16 @@ const GuessWho = ({onNewGame, onHome}) => {
         </div>
         {playerAircraft && (
         <div className='PlayerAircraft'>
+          <div className='PlayerAircraftText'>
             <p>Your aircraft:</p>
+          </div>
+          <div className='PlayerAircraftCard'>
             <AircraftCard 
                 key={playerAircraft.id} 
                 aircraft={playerAircraft} 
                 onClick={()=>{}}
             />
+          </div>
         </div>
         )}
         </div>
