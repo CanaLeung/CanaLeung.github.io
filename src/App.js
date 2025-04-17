@@ -31,6 +31,7 @@ function App() {
 
   return (
     <Routes>
+      <Route path="/GuessWho/game" element={<GuessWho onNewGame={handleNewGame} onHome={handleHome} />}/>
       <Route path="*" element={
         <MainPage
             userName={userName}
@@ -40,7 +41,6 @@ function App() {
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
           />}/>
-      <Route path="/GuessWho/game" element={<GuessWho onNewGame={handleNewGame} onHome={handleHome} />}/>
     </Routes>
   );
 }
